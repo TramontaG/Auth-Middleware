@@ -1,1 +1,3 @@
-console.log('Hello, world!');
+import createJWTMiddleware from './JWT';
+
+export default createJWTMiddleware;

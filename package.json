@@ -1,5 +1,5 @@
 {
-	"name": "Auth Middleware",
+	"name": "Auth-Middleware",
 	"version": "1.0.0",
 	"description": "Authentication Middleware for my microsservices",
 	"main": "./dist/index.js",

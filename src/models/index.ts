@@ -1,4 +1,4 @@
-export type Permission = 'image' | 'user-management';
+export type Permission = 'image' | 'user-management' | 'DEBUG';
 
 export type User = {
 	id: number;
