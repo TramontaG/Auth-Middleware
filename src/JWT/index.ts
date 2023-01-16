@@ -13,8 +13,6 @@ const createJWTMiddleware = (baseURL: string) => {
 				const jwt: string = req.get('jwt') || req.cookies.jwt;
 				const cookies = await API.getAuth(jwt, perms);
 
-				console.log(cookies);
-
 				cookies?.forEach(cookie => {
 					return res.cookie(cookie.name, cookie.value, {
 						maxAge: cookie.maxAge,
