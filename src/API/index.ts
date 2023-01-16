@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosInstance } from 'axios';
+import parseCookie from 'src/cookieParser';
 import { Permission } from '../models';
 import { Unauthorized, BadRequest, Forbidden, ServerError } from '../models/Errors';
 
@@ -16,9 +17,13 @@ class AuthAPI {
 				perms: requestedPerms,
 				jwt,
 			});
-			return response;
+
+			return response.headers['set-cookie']?.map(cookie => {
+				return parseCookie(cookie).result;
+			});
 		} catch (e: AxiosError | unknown) {
 			if (isAxiosError(e)) {
+				console.warn(e.message);
 				if (e.response?.status === 401) {
 					throw errors.unauthorized;
 				}

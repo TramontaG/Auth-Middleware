@@ -23,6 +23,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@guigalleta/t-parser@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@guigalleta/t-parser/-/t-parser-2.1.1.tgz#87f965670350fd28a54284935cacca666ff25af7"
+  integrity sha512-ipzB2jcwfelCdEhIt4J2P0VcSX9Zzaby3uLQPBXxGjFLjh62b+D6t0B7GyFlD+2ZI0HaCdpVSmjvACLJSzCeZQ==
+
 "@jest/expect-utils@^29.3.1":
   version "29.3.1"
   resolved "https://registry.yarnpkg.com/@jest/expect-utils/-/expect-utils-29.3.1.tgz#531f737039e9b9e27c42449798acb5bba01935b6"
